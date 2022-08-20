@@ -1,3 +1,9 @@
+#body{
+   background-color: rgb(0, 0, 0);
+}
+#byline{
+   align-content: bottom;
+}
 #usernametag{
     font-weight: 50;
     font-size: 20;
@@ -8,9 +14,23 @@
  #schooldesc{
     border: 2px solid rgb(255, 153, 0);
     padding-left: 1%;
+    background-color: white;
  }
 #h1maintitle{
-   background-color: rgb(230, 207, 245);
+   background-color: rgb(0, 0, 0);
+}
+marquee{
+   color: green;
+
+}
+#header{
+   text-decoration-color: white;
+   color: White;
+   margin: 5px;
+   padding-bottom: 5px;
+   border-top: 2px solid white;
+   border-bottom: 2px solid white;
+   align-content: center;
 }
 #logoutbt{
    display: none;

@@ -1,3 +1,4 @@
+//rgb(162, 131, 254);
 var loginbt = document.getElementById('loginbt');
 var logoutbt=document.getElementById('logoutbt');
 var userdet = document.getElementById('userdet');
@@ -16,19 +17,14 @@ var requ2 = document.getElementById('requ2');
 var loginbutton = document.getElementById('loginbutton');
 var err = document.getElementById('err');
 var tnu= document.getElementById('usernametag');
-var lnk=' ';
-var sjd=new Array(117,105,110,46,106,115,111,110);
-
-document.cookie="SameSite=None";
+var lnk=" ";
+//document.cookie="SameSite=None";
 if(localStorage.getItem('uid') !== null && localStorage.getItem('pswd') !== null)
 {
     p(localStorage.getItem('uid'),localStorage.getItem('pswd'),function(tem){
        if(tem !== -1)
        {
-           for(var i=0;i<8;i++){
-           lnk += String.fromCharCode(sjd[i]);
-           }
-           lnk=lnk.substring(1);
+           lnk="uin.json"
         readTextFile(lnk, function(xtx){
             let lm = JSON.parse(xtx);
             tnu.innerText = lm[tem].ur;
@@ -65,7 +61,6 @@ loginbutton.addEventListener('click',function(){
     }
     else{
     p(userid.value,pswd.value,function(itemp){
-        console.log(itemp);
         if(itemp !== -1)
          {
             if(remme)
@@ -95,7 +90,7 @@ function readTextFile(leil, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
     rawFile.open("GET", leil, true);
-    rawFile.setRequestHeader("SameSite","None");
+    rawFile.setRequestHeader("SameSite","true");
     rawFile.onreadystatechange = function() {
         if (rawFile.readyState === 4 && rawFile.status == "200") {
             callback(rawFile.responseText);
@@ -106,11 +101,7 @@ function readTextFile(leil, callback) {
 function p(uid,pd,callback)
 {
     var tempdata;
-    for(var i=0;i<8;i++){
-        lnk += String.fromCharCode(sjd[i]);
-        }
-        lnk=lnk.substring(1);
-        //lnk="uin.json";
+        lnk="uin.json";
     readTextFile(lnk, function(text){
         lm = JSON.parse(text);
         for(var i=0;i<lm.length;i++)
@@ -204,7 +195,7 @@ backbtn.addEventListener('click',function(){
 function displayMC(){
     pageno=3;
     userdet.style.display = 'block';
-    document.body.style.backgroundImage = "url('https://drive.google.com/uc?export=download&id=1kR0v47oko1It225wVgZw_9g1JOywMCn9')";
+    document.body.style.backgroundColor = "black";
     document.body.style.backgroundRepeat = 'no-repeat';
     document.body.style.backgroundSize = '100% 100%';
     loginbt.style.display = 'none';
