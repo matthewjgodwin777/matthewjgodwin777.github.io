@@ -1,0 +1,63 @@
+#usernametag{
+    font-weight: 50;
+    font-size: 20;
+ }
+ #userdet{
+    margin-right: 1%;
+ }
+ #schooldesc{
+    border: 2px solid rgb(255, 153, 0);
+    padding-left: 1%;
+ }
+#h1maintitle{
+   background-color: rgb(230, 207, 245);
+}
+#logoutbt{
+   display: none;
+}
+#loginbt{
+   display: block;
+}
+#logincard{
+   display: none;
+   margin-left: 35%;
+   margin-right: 35%;
+   padding-left: 1%;
+   padding-right: 1%;
+}
+#requ1,#requ2{
+   font-family: cursive;
+   color: red;
+   font-size: small;
+   display: none;
+}
+#err{
+   display: none;
+   margin-top: 2%;
+}
+#mc{
+   display: none;
+}
+#mc{
+   margin-left: 20%;
+   margin-right: 20%;
+}
+#titlemarklist,#titlefeestatus{
+   background-color: rgb(136, 237, 255);
+   border: 2px solid rgb(255, 187, 0);
+   color:rgb(255, 0, 0);
+}
+#sub1,#sub2,#sub3,#sub4,#sub5,#psr{
+   padding-left: 0%;
+}
+th{
+   background-color: rgb(247, 223, 118);
+}
+#tfee1,#tfee2,#tfee3,#fee1,#fee2,#fee3,#m1,#m2,#m3,#m4,#m5,#sub1,#sub2,#sub3,#sub4,#sub5,#psr,#passstatus{
+   border: 1px solid black;
+   border-collapse: collapse;
+}
+#tfee1,#tfee2,#tfee3{
+   width: 37%;
+   background-color: rgb(235,235,235);
+}

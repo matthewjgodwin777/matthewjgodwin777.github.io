@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Portal- MJG School</title>
+</head>
+<body style="background-color: rgb(262, 210, 251);">
+    <div id='userdet' class='right card'>
+        <img height="110px" width="110px" src="https://cdn.patchcdn.com/assets/layout/contribute/user-default.png">
+        <p class='center'>
+            <i id='usernametag'>Guest User</i>
+            <a id="loginbt" href="" style="font-size: small;">Log in</a>
+            <a id='logoutbt' href="" style="font-size: small;">Log out</a></p>
+    </div>
+    <h1 id='h1maintitle' style="font-size: 60px; height: 100px;">MJG's School Of Excellence</h1><img id='schoolpic' height='250px' width='500px' src="https://drive.google.com/uc?export=download&id=1kR0v47oko1It225wVgZw_9g1JOywMCn9"><br><br><div id="schooldesc" class='left'><p class='centre'><br><i> Welcome to the Portal of MJG's School Of Excellence. This place is a friendly, welcoming school where children are happy and enjoy learning.<br>
+        Our vision is to grow GREAT citizens, empowered to live successfully in their personal and global lives.<br>
+        We highly value connections with our parents and community.<br> Building strong family and community partnerships enables us to maximise the learning and social experiences of our students.<br><br>
+        Please Login using the credentials given to you by the management to continue to the Student Academic Performance Portal!
+    </i></p></div><br><br>
+    <div class='card center' id='logincard'>
+        <div class="alert alert-danger" id='err'></div>
+        <br><input type="button" value="< Back" class='btn left' id="backbtn"><br><br>
+        <h4 class='center'>Enter Login Credentials</h4><br><p>(given by the institution)</p>
+        <table>
+            <tr>
+             <td>User ID : <p id='requ1'>*required</p></td>
+             <td><input type="text" id="userid"></td>
+            </tr>
+            <tr>
+             <td>Password : <p id='requ2'>*required</p></td>
+             <td><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <td><img id='chkbxrm' height="20px" width="20px" src="https://spng.pngfind.com/pngs/s/614-6146317_check-box-empty-comments-casilla-de-verificacion-png.png"><p style="display: inline-block;"> Remember me</p></td>
+            </tr>
+             <tr>
+             <td><input type="button" value="Log In" class='btn' id="loginbutton"></td>
+            </tr>
+            </table>
+    </div>
+    <div id="mc">
+        <h1><p id='titlefeestatus'>Fees Status:</p></h1><br>
+        <div class='card center' id='feesstatus'>
+            <table id='feetable'>
+                <tr>
+                    <th>Terms</th>
+                    <th>Fees Status</th>
+                </tr>
+                <tr>
+                    <td class="center" id='tfee1'>I</td>
+                    <td class="center" id="fee1">Fee Collection Hasn't Started Yet</td>
+                </tr>
+                <tr>
+                    <td class="center" id='tfee2'>II</td>
+                    <td class="center" id="fee2">Fee Collection Hasn't Started Yet</td>
+                </tr>
+                <tr>
+                    <td class="center" id='tfee3'>III</td>
+                    <td class="center" id="fee3">Fee Collection Hasn't Started Yet</td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+        <br><br>
+        <h1><p id='titlemarklist'>Marklist:</p></h1>
+        <div class='card center' id='marklist'>
+            <table>
+                <tr>
+                    <th>Subjects</th>
+                    <th>Marks Obtained (%)</th>
+                </tr>
+                <tr>
+                    <td class='center' id='sub1'>English</td>
+                    <td class="center" id="m1"></td>
+                </tr>
+                <tr>
+                    <td class='center' id='sub2'>Maths</td>
+                    <td class="center" id="m2"></td>
+                </tr>
+                <tr>
+                    <td class='center' id='sub3'>Physics</td>
+                    <td class="center" id="m3"></td>
+                </tr>
+                <tr>
+                    <td class='center' id='sub4'>Chemistry</td>
+                    <td class="center" id="m4"></td>
+                </tr>
+                <tr>
+                    <td class='center' id='sub5'>Computer Application</td>
+                    <td class="center" id="m5"></td>
+                </tr>
+                <tr><td class='center' id='psr'><u>Pass Status:</u></td><td class='center' id='passstatus'><br></td></tr>
+            </table>
+        </div>
+    </div>
+    <script src="appl2.js"></script>
+</body>
+</html>
