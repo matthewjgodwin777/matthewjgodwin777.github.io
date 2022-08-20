@@ -63,9 +63,9 @@ marquee{
    margin-right: 20%;
 }
 #titlemarklist,#titlefeestatus{
-   background-color: rgb(136, 237, 255);
-   border: 2px solid rgb(255, 187, 0);
-   color:rgb(255, 0, 0);
+   background-color: rgb(0, 0, 0);
+   border: 2px solid rgb(255, 255, 255);
+   color:rgb(255, 255, 255);
 }
 #sub1,#sub2,#sub3,#sub4,#sub5,#psr{
    padding-left: 0%;
