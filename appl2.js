@@ -1,4 +1,3 @@
-//rgb(162, 131, 254);
 var loginbt = document.getElementById('loginbt');
 var logoutbt=document.getElementById('logoutbt');
 var userdet = document.getElementById('userdet');
